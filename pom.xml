@@ -59,17 +59,17 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>source/production/java</sourceDirectory>
+        <sourceDirectory>src/com/wrox</sourceDirectory>
         <resources>
             <resource>
-                <directory>source/production/resources</directory>
+                <directory>src/com/wrox/resources</directory>
             </resource>
         </resources>
 
-        <testSourceDirectory>source/test/java/unit</testSourceDirectory>
+        <testSourceDirectory>src/test/com/wrox/unit</testSourceDirectory>
         <testResources>
             <testResource>
-                <directory>source/test/java/resources</directory>
+                <directory>src/test/com/wrox/resources</directory>
             </testResource>
         </testResources>
 
