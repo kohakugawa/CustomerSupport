@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.List" %>
+<%--@elvariable id="numberOfSessions" type="java.lang.integer"--%>
 <%!
     private static String toString(long timeInterval)
     {
@@ -18,7 +19,6 @@
     }
 %>
 <%
-    int numberOfSessions = (Integer)request.getAttribute("numberOfSessions");
     @SuppressWarnings("unchecked")
     List<HttpSession> sessions = (List<HttpSession>)request.getAttribute("sessionList");
 %>
@@ -30,7 +30,7 @@
     <body>
         <a href="<c:url value="/login?logout" />">Logout</a><br /><br />
         <h2>Sessions</h2>
-        There are a total of <%= numberOfSessions %> active sessions in this
+        There are a total of ${numberOfSessions} active sessions in this
         application.<br /><br />
         <%
             long timestamp = System.currentTimeMillis();
