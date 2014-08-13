@@ -15,6 +15,8 @@ public class Ticket {
 
     private String body;
 
+    //private int numberOfAttachments = 0;
+
     private Map<String, Attachment> attachments = new LinkedHashMap<>();
 
     public String getCustomerName()
@@ -60,6 +62,7 @@ public class Ticket {
     public void addAttachment(Attachment attachment)
     {
         this.attachments.put(attachment.getName(), attachment);
+        //this.numberOfAttachments = this.getNumberOfAttachments();
     }
 
     public int getNumberOfAttachments()

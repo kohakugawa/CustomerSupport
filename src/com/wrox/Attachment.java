@@ -5,9 +5,9 @@ package com.wrox;
  */
 public class Attachment {
 
-private String name;
+    private String name;
 
-private byte[] contents;
+    private byte[] contents;
 
     public String getName()
     {
